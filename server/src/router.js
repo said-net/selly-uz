@@ -1,0 +1,10 @@
+module.exports = require("express")
+  .Router()
+  .use("/user", require("./routers/user.router"))
+  .use("/admin", require("./routers/admin.router"))
+  .use("/supplier", require("./routers/supplier.router"))
+  .use("/seller", require("./routers/seller.router"))
+  .use("/operator", require("./routers/operator.router"))
+  .use("/courier", require("./routers/courier.router"))
+  .use("/category", require("./routers/category.router"))
+  .use("/order", require("./routers/order.router"));
